@@ -14,16 +14,14 @@ const News = () => {
         console.log(data);
         
     };
-    
-    
+   
     useEffect(() => {
         getnewsapi();
     }, []);
 
     
     return ( 
-        
-        <>
+       <>
     {
         data.map((elem)=>{
             const date = new Date(elem.publishedAt)
